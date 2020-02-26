@@ -1,0 +1,10 @@
+{
+  "Method": [
+    { "id": 1, "title": "isConnected", "command": "boolean isConnected()", "description": "Check if the session is currently connected. ", "return": "boolean" },
+    { "id": 2, "title": "getSession", "command": "Session getSession(EntityMode entityMode)", "description": "Starts a new Session with the given entity mode in effect. This secondary Session inherits the connection, transaction, and other context information from the primary Session. It doesn't need to be flushed or closed by the developer.  ", "return": "The new session." } },
+    { "id": 3, "title": "close", "command": "Connection close()", "description": "End the session by releasing the JDBC connection and cleaning up. It is not strictly necessary to close the session but you must at least disconnect() it. ", "return": "the connection provided by the application or null. " }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
